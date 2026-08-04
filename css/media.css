@@ -1,0 +1,46 @@
+@media screen and (max-width: 992px) and (min-width: 375px) {
+  .navbar {
+    padding-inline: 10px !important;
+  }
+  .heading {
+    text-align: center;
+  }
+  .heading h1 {
+    font-size: 32px;
+  }
+  .heading p {
+    font-size: 14px;
+    margin-bottom: 30px !important;
+    padding: 0;
+  }
+  .heading .gaming {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    justify-content: center;
+  }
+  .heading .gaming a {
+    width: 90%;
+    padding-block: 10px;
+  }
+  .heading .gaming .start {
+    margin-right: 0 !important;
+  }
+  a.navbar-brand {
+    flex-grow: 1;
+    padding-left: 0;
+  }
+  .landing {
+    display: flex;
+    justify-content: center !important;
+    padding-bottom: 70px;
+  }
+  .hero-pic {
+    width: 450px !important;
+    height: 250px !important;
+  }
+  .landing .hero-pic .pseudo {
+    bottom: -60px;
+    left: 30%;
+  }
+}
