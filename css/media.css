@@ -1,49 +1,3 @@
-/* @media screen and (max-width: 992px) and (min-width: 375px) {
-  .navbar {
-    padding-inline: 10px !important;
-  }
-  .heading {
-    text-align: center;
-  }
-  .heading h1 {
-    font-size: 32px;
-  }
-  .heading p {
-    font-size: 14px;
-    margin-bottom: 30px !important;
-    padding: 0;
-  }
-  .heading .gaming {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 15px;
-    justify-content: center;
-  }
-  .heading .gaming a {
-    width: 90%;
-    padding-block: 10px;
-  }
-  .heading .gaming .start {
-    margin-right: 0 !important;
-  }
-  a.navbar-brand {
-    flex-grow: 1;
-    padding-left: 0;
-  }
-  .landing {
-    display: flex;
-    justify-content: center !important;
-    padding-bottom: 70px;
-  }
-  .hero-pic {
-    width: 450px !important;
-    height: 250px !important;
-  }
-  .landing .hero-pic .pseudo {
-    bottom: -60px;
-    left: 30%;
-  }
-} */            
 /* ================================
    TABLET
 ================================ */
@@ -733,59 +687,100 @@
     min-height: 190px;
   }
 }
+/* =========================
+   WHAT WE DO - RESPONSIVE
+========================= */
+
+#what-we-do .row {
+  align-items: stretch;
+}
+
+#what-we-do .row > div {
+  display: flex;
+}
+
+#what-we-do .game-card,
+#what-we-do .row > div > .inner {
+  width: 100%;
+}
+
+/* Tablet */
 @media (max-width: 991px) {
-
-  #what-we-do .game-card {
-    min-height: 280px;
+  #what-we-do .game-card,
+  #what-we-do .row > div > .inner {
     height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-
 }
 
+/* Mobile */
 @media (max-width: 767px) {
+  #what-we-do {
+    overflow: hidden;
+  }
 
-  #what-we-do .game-card {
-    min-height: 250px;
-    height: 250px;
-    padding: 25px 15px !important;
+  #what-we-do .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  #what-we-do .row {
+    --bs-gutter-x: 15px;
+    --bs-gutter-y: 15px;
+  }
+
+  #what-we-do .row > div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
-  #what-we-do .game-card h5 {
-    font-size: 14px;
-    margin-bottom: 12px;
+  #what-we-do .game-card,
+  #what-we-do .row > div > .inner {
+    height: 220px;
+    min-height: 220px;
   }
-
-  #what-we-do .game-card p {
-    font-size: 12px;
-    line-height: 1.6;
-    margin-bottom: 0;
-  }
-
-}
-
-@media (max-width: 575px) {
 
   #what-we-do .game-card {
-    min-height: 220px;
-    height: 220px;
-    padding: 20px 10px !important;
+    padding: 15px !important;
+  }
+
+  #what-we-do .simple-icon {
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  #what-we-do .simple-icon i {
+    font-size: 18px !important;
   }
 
   #what-we-do .game-card h5 {
-    font-size: 12px;
-  }
-
-  #what-we-do .game-card p {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.5;
   }
 
+  /* الصورة */
+  #what-we-do .row > div > .inner img {
+    min-height: 0 !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 575px) {
+  #what-we-do .game-card,
+  #what-we-do .row > div > .inner {
+    height: 200px;
+    min-height: 200px;
+  }
+
+  #what-we-do .game-card h5 {
+    font-size: 11px;
+  }
+
+  #what-we-do .simple-icon {
+    padding: 8px !important;
+  }
+
+  #what-we-do .simple-icon i {
+    font-size: 15px !important;
+  }
 }
