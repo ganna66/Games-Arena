@@ -414,6 +414,34 @@
   .form-to-send-msg textarea {
     height: 120px;
   }
+
+  
+  .carousel-item .row {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.carousel-item .inner {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+    .landing .hero-pic .pseudo {
+    left: 50%;
+    bottom: -45px;
+    transform: translateX(-50%);
+  }
+
+    .arrows-left {
+    left: -10px;
+  }
+
+  .arrows-right {
+    right: -10px;
+  }
 }
 
 
