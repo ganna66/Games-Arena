@@ -217,18 +217,24 @@ form i:hover {
   overflow: hidden;
   background-color: #0b0e13;
 }
-.carousal-item {
+/* .carousal-item {
   width: 500px;
   height: 400px;
+} */
+.carousel-item {
+  width: 100%;
 }
 .carousel-item .inner .game {
-  min-width: 400px;
-  height: 300px;
+  /* min-width: 400px;
+  height: 300px; */
   margin-bottom: 10px;
   border-radius: 20px;
   overflow: hidden;
   border: 3px solid transparent;
   position: relative;
+  min-width: 0;
+  width: 100%;
+  height: 300px;
 }
 .carousel-item .inner .game img {
   height: 100%;
