@@ -43,141 +43,53 @@
     bottom: -60px;
     left: 30%;
   }
-} */
-/* =========================================================
-   RESPONSIVE DESIGN
-   ========================================================= */
+} */            
+/* ================================
+   TABLET
+================================ */
 
-/* =========================
-   Large Tablets / Small Laptops
-   769px - 1199px
-   ========================= */
+@media (max-width: 991px) {
 
-@media screen and (max-width: 1199px) {
-
-  /* ---------- Navbar ---------- */
-
+  /* Navbar */
   .navbar {
-    padding-inline: 25px !important;
-  }
-
-  .navbar-nav {
-    gap: 5px;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 14px;
-  }
-
-  /* ---------- Hero ---------- */
-
-  .heading h1 {
-    font-size: 48px;
-  }
-
-  .heading p {
-    font-size: 15px;
-  }
-
-  .landing .hero-pic {
-    height: 350px;
-  }
-
-  .landing .hero-pic .pseudo {
-    left: -25px;
-    bottom: -45px;
-  }
-
-  /* ---------- Games ---------- */
-
-  .carousel-item .inner .game {
-    min-width: 0;
-    width: 100%;
-    height: 260px;
-  }
-
-  .carousel-item .inner .game-top-spans {
-    font-size: 12px;
-  }
-
-  /* ---------- What We Do ---------- */
-
-  .game-card {
-    min-height: 270px;
-  }
-
-  /* ---------- Contact ---------- */
-
-  .location {
-    padding: 30px !important;
-  }
-
-  .caption-data p {
-    font-size: 14px;
-  }
-}
-
-
-/* =========================
-   Tablets
-   768px - 991px
-   ========================= */
-
-@media screen and (max-width: 991px) {
-
-  /* ---------- Navbar ---------- */
-
-  .navbar {
-    padding-inline: 15px !important;
-    padding-block: 12px !important;
-  }
-
-  .navbar .container-fluid {
-    padding-inline: 0;
+    padding-inline: 20px !important;
   }
 
   .navbar-collapse {
+    text-align: center;
     padding-top: 20px;
   }
 
   .navbar-nav {
-    text-align: center;
     align-items: center;
-  }
-
-  .navbar-nav .nav-link {
-    padding-block: 8px;
   }
 
   .navbar form {
     justify-content: center;
     margin-top: 15px;
-    padding-bottom: 10px;
   }
 
-  /* ---------- Hero ---------- */
 
+  /* Hero */
   #hero-section {
     background-attachment: scroll;
   }
 
   .landing {
-    padding-top: 130px;
+    padding-top: 120px;
     padding-bottom: 100px;
   }
 
   .heading {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 
   .heading h1 {
-    font-size: 42px;
+    font-size: 45px;
   }
 
   .heading p {
-    max-width: 650px;
-    margin-inline: auto;
     font-size: 15px;
   }
 
@@ -188,85 +100,63 @@
   .landing .hero-pic {
     width: 80% !important;
     max-width: 600px;
-    height: 330px;
-    margin-inline: auto;
+    height: 320px;
+    margin: auto;
   }
 
   .landing .hero-pic .pseudo {
     left: 50%;
-    bottom: -55px;
+    bottom: -50px;
     transform: translateX(-50%);
   }
 
-  /* ---------- Section Headers ---------- */
 
+  /* Section Headers */
   .header h2 {
     font-size: 40px;
   }
 
   .interactive {
-    font-size: 35px;
+    font-size: 38px;
   }
 
-  /* ---------- Our Games ---------- */
 
+  /* Games */
   .carousel-item .inner .game {
     min-width: 0;
-    height: 240px;
+    width: 100%;
+    height: 250px;
   }
 
-  .carousel-item .inner .game-top-spans {
-    top: -35px;
-    font-size: 11px;
-  }
 
-  .carousel-item .inner .game-top-spans span {
-    padding: 4px 7px;
-  }
-
-  /* ---------- What We Do ---------- */
-
-  #what-we-do .container-fluid,
-  #our-team .container-fluid,
-  #contact-us .container-fluid {
-    padding-inline: 30px !important;
-  }
-
+  /* What We Do */
   .game-card {
-    min-height: 280px;
+    min-height: 270px;
   }
 
-  /* ---------- Our Team ---------- */
 
+  /* Team */
   .team-member-caption {
     left: 15px;
     bottom: 20px;
   }
 
-  .team-member-caption h5 {
-    font-size: 15px;
-  }
-
-  .team-member-caption span {
-    font-size: 12px;
-  }
-
   .nick-Name {
-    transform: translateX(90px) rotate(90deg);
+    transform: translateX(80px) rotate(90deg);
   }
 
-  /* ---------- Contact ---------- */
 
-  .contact-data {
-    margin-bottom: 30px;
+  /* Contact */
+  .location {
+    padding: 25px !important;
   }
 
   .form-to-send-msg {
     padding: 25px !important;
   }
 
-  /* ---------- Footer ---------- */
 
+  /* Footer */
   .footer-section {
     text-align: center;
   }
@@ -281,54 +171,51 @@
 }
 
 
-/* =========================
-   Mobile
-   576px - 767px
-   ========================= */
 
-@media screen and (max-width: 767px) {
+/* ================================
+   MOBILE
+================================ */
 
-  /* ---------- General ---------- */
+@media (max-width: 767px) {
 
   :root {
     --section-padding: 4rem;
   }
 
-  /* ---------- Navbar ---------- */
 
+  /* Navbar */
   .navbar {
-    padding-inline: 12px !important;
+    padding: 10px 12px !important;
   }
 
   .navbar-brand {
     font-size: 18px;
   }
 
-  .navbar .fa-gamepad {
-    font-size: 18px;
+  .navbar-collapse {
+    padding-top: 15px;
   }
 
-  /* ---------- Hero ---------- */
 
+  /* Hero */
   .landing {
-    padding-top: 115px;
+    padding-top: 110px;
     padding-bottom: 90px;
   }
 
   .heading {
-    margin-bottom: 65px;
+    text-align: center;
+    margin-bottom: 60px;
   }
 
   .heading h1 {
     font-size: 34px;
-    line-height: 1.2;
-    margin-bottom: 20px !important;
+    line-height: 1.3;
   }
 
   .heading p {
     font-size: 14px;
     line-height: 1.7;
-    margin-bottom: 30px !important;
     padding-inline: 10px;
   }
 
@@ -340,51 +227,34 @@
   }
 
   .heading .gaming a {
-    width: 85%;
-    padding: 12px 15px;
+    width: 90%;
     margin: 0 !important;
+    padding: 12px 15px;
     text-align: center;
   }
 
   .landing .hero-pic {
     width: 90% !important;
     height: 250px !important;
+    margin: auto;
   }
 
   .landing .hero-pic .pseudo {
-    bottom: -50px;
     left: 50%;
-    padding: 12px;
+    bottom: -50px;
     transform: translateX(-50%);
     white-space: nowrap;
+    padding: 12px;
   }
 
-  .landing .hero-pic .pseudo .icon {
-    margin-right: 10px !important;
-  }
 
-  /* ---------- Section Headers ---------- */
-
+  /* Section Headers */
   .header h2 {
     font-size: 32px;
-    line-height: 1.3;
   }
 
   .header span {
     font-size: 13px;
-  }
-
-  .header span::before,
-  .header span::after {
-    width: 45px;
-  }
-
-  .header span::before {
-    left: -65%;
-  }
-
-  .header span::after {
-    right: -65%;
   }
 
   .header p {
@@ -392,14 +262,17 @@
     line-height: 1.6;
   }
 
-  /* ---------- Our Games ---------- */
+
+  /* ================================
+     OUR GAMES
+  ================================= */
 
   #our-games {
     overflow: hidden;
   }
 
-  .carousel.slide {
-    overflow: visible;
+  .carousel {
+    overflow: hidden;
   }
 
   .carousel-item .row {
@@ -408,16 +281,27 @@
 
   .carousel-item .inner {
     width: 100%;
-    padding-inline: 20px;
-    margin-bottom: 45px;
+    padding-inline: 15px;
   }
 
   .carousel-item .inner .game {
-    min-width: 0;
-    width: 100%;
+    min-width: 0 !important;
+    width: 100% !important;
     height: 240px;
-    margin-bottom: 0;
     border-radius: 15px;
+  }
+
+  .carousel-item .inner .game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* Remove hover effects on mobile */
+  .carousel-item .inner .game::before,
+  .carousel-item .inner .game::after {
+    display: none;
   }
 
   .carousel-item .inner .game-top-spans {
@@ -426,20 +310,8 @@
     text-align: left;
   }
 
-  .carousel-item .inner .game-top-spans span {
-    font-size: 11px;
-    padding: 4px 8px;
-  }
 
-  /* Hide unnecessary hover title behavior on touch screens */
-  .carousel-item .inner .game::before {
-    display: none;
-  }
-
-  .carousel-item .inner .game::after {
-    display: none;
-  }
-
+  /* Carousel Buttons */
   .prev,
   .next {
     padding: 10px !important;
@@ -449,11 +321,10 @@
     padding: 10px 15px !important;
   }
 
-  .view-all-games p {
-    font-size: 13px;
-  }
 
-  /* ---------- What We Do ---------- */
+  /* ================================
+     WHAT WE DO
+  ================================= */
 
   #what-we-do .container-fluid,
   #our-team .container-fluid,
@@ -462,39 +333,37 @@
   }
 
   .interactive {
-    font-size: 25px;
+    font-size: 28px;
   }
 
   .game-card {
     min-height: 240px;
   }
 
-  .game-card h5 {
-    font-size: 15px;
-  }
 
-  .simple-icon {
-    padding: 12px !important;
-  }
-
-  /* ---------- Logo Scrolling ---------- */
+  /* ================================
+     SCROLLING LOGOS
+  ================================= */
 
   .scrolling {
-    height: 230px;
+    height: 220px;
   }
 
   .small-logo {
     width: 65px;
   }
 
-  /* ---------- Our Team ---------- */
+
+  /* ================================
+     OUR TEAM
+  ================================= */
 
   #our-team .row {
     row-gap: 25px;
   }
 
   .team-member-caption {
-    left: 15px;
+    left: 12px;
     bottom: 15px;
   }
 
@@ -511,23 +380,17 @@
   }
 
   .nick-Name {
-    transform: translateX(70px) rotate(90deg);
-    font-size: 12px;
+    font-size: 10px;
+    transform: translateX(60px) rotate(90deg);
   }
 
-  /* ---------- Contact ---------- */
+
+  /* ================================
+     CONTACT
+  ================================= */
 
   .location {
-    padding: 25px !important;
-  }
-
-  .location .icon {
-    padding: 12px !important;
-    flex-shrink: 0;
-  }
-
-  .location .icon i {
-    font-size: 16px !important;
+    padding: 20px !important;
   }
 
   .caption-data {
@@ -540,7 +403,7 @@
 
   .caption-data p {
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.5;
     word-break: break-word;
   }
 
@@ -548,85 +411,35 @@
     padding: 20px !important;
   }
 
-  .form-to-send-msg .row > div {
-    margin-bottom: 15px;
-  }
-
   .form-to-send-msg textarea {
     height: 120px;
-  }
-
-  .send-msg {
-    padding: 12px !important;
-  }
-
-  .form-to-send-msg .row:last-child p {
-    font-size: 20px !important;
-  }
-
-  .form-to-send-msg .row:last-child span {
-    font-size: 12px !important;
-  }
-
-  /* ---------- Footer ---------- */
-
-  .footer-section {
-    padding-block: 50px !important;
-  }
-
-  .footer-logo {
-    font-size: 24px;
-  }
-
-  .footer-title {
-    font-size: 20px;
-  }
-
-  .footer-text {
-    font-size: 14px;
-  }
-
-  .bottom-links {
-    gap: 12px;
-    justify-content: center;
-    font-size: 13px;
   }
 }
 
 
-/* =========================
-   Small Mobile
-   375px - 575px
-   ========================= */
 
-@media screen and (max-width: 575px) {
+/* ================================
+   SMALL MOBILE
+================================ */
 
-  /* ---------- General ---------- */
+@media (max-width: 575px) {
 
   :root {
     --section-padding: 3.5rem;
   }
 
-  /* ---------- Navbar ---------- */
 
+  /* Navbar */
   .navbar {
     padding-inline: 10px !important;
-    padding-block: 10px !important;
   }
 
-  a.navbar-brand {
-    flex-grow: 1;
-    padding-left: 0;
-    margin-left: 8px !important;
+  .navbar-brand {
     font-size: 17px;
   }
 
-  .navbar-toggler {
-    padding: 5px 8px;
-  }
 
-  /* ---------- Hero ---------- */
-
+  /* Hero */
   .landing {
     padding-top: 105px;
   }
@@ -637,7 +450,6 @@
 
   .heading p {
     font-size: 13px;
-    padding-inline: 5px;
   }
 
   .heading .gaming a {
@@ -648,24 +460,15 @@
   .landing .hero-pic {
     width: 100% !important;
     height: 210px !important;
-    border-width: 3px;
   }
 
   .landing .hero-pic .pseudo {
-    bottom: -48px;
+    bottom: -45px;
     padding: 10px;
   }
 
-  .landing .hero-pic .pseudo .active-players {
-    font-size: 10px;
-  }
 
-  .landing .hero-pic .pseudo .text span:last-child {
-    font-size: 14px !important;
-  }
-
-  /* ---------- Headers ---------- */
-
+  /* Headers */
   .header h2 {
     font-size: 27px;
   }
@@ -680,19 +483,19 @@
   }
 
   .interactive {
-    font-size: 21px;
+    font-size: 22px;
   }
 
-  /* ---------- Games ---------- */
 
+  /* Games */
   .carousel-item .inner {
     padding-inline: 10px;
   }
 
   .carousel-item .inner .game {
+    min-width: 0 !important;
+    width: 100% !important;
     height: 210px;
-    border-radius: 12px;
-    border-width: 2px;
   }
 
   .carousel-item .inner .game-top-spans {
@@ -700,29 +503,32 @@
   }
 
   .carousel-item .inner .game-top-spans span {
-    padding: 3px 6px;
+    padding: 3px 7px;
   }
 
-  .carousal > div:last-child {
-    flex-wrap: wrap;
-  }
 
+  /* Carousel buttons */
   .prev,
   .next {
-    padding: 9px !important;
+    padding: 8px !important;
   }
 
   .view-all-games {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
-  /* ---------- What We Do ---------- */
 
+  /* What We Do */
   #what-we-do .container-fluid,
   #our-team .container-fluid,
   #contact-us .container-fluid {
     padding-inline: 15px !important;
+  }
+
+  #what-we-do .row {
+    --bs-gutter-x: 10px;
+    --bs-gutter-y: 10px;
   }
 
   .game-card {
@@ -733,45 +539,18 @@
     font-size: 13px;
   }
 
-  .simple-icon {
-    padding: 10px !important;
-    margin-bottom: 10px !important;
-  }
 
-  .simple-icon i {
-    font-size: 16px !important;
-  }
-
-  #what-we-do .row {
-    --bs-gutter-x: 10px;
-    --bs-gutter-y: 10px;
-  }
-
-  #what-we-do .col-6 {
-    padding-inline: 5px;
-  }
-
-  /* ---------- Scrolling Logos ---------- */
-
+  /* Logos */
   .scrolling {
     height: 190px;
   }
 
   .small-logo {
     width: 55px;
-    margin-inline: 4px !important;
   }
 
-  /* ---------- Team ---------- */
 
-  #our-team .row {
-    margin-top: 30px !important;
-  }
-
-  .team-member {
-    padding-inline: 5px;
-  }
-
+  /* Team */
   .team-member-caption {
     left: 10px;
     bottom: 10px;
@@ -787,30 +566,20 @@
 
   .paragraph {
     font-size: 8px;
-    margin-bottom: 0;
   }
 
   .nick-Name {
     display: none;
   }
 
-  /* ---------- Contact ---------- */
 
-  #contact-us .row.g-5 {
-    --bs-gutter-y: 2rem !important;
-  }
-
+  /* Contact */
   .location {
-    padding: 18px !important;
-    gap: 12px !important;
-  }
-
-  .location .icon {
-    padding: 10px !important;
+    padding: 15px !important;
   }
 
   .caption-data .font-20 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .caption-data p {
@@ -821,17 +590,9 @@
     padding: 15px !important;
   }
 
-  .form-to-send-msg .row {
-    margin-bottom: 0 !important;
-  }
-
   .form-to-send-msg .row > .col-6 {
     width: 100%;
     margin-bottom: 15px;
-  }
-
-  .form-to-send-msg label {
-    font-size: 12px;
   }
 
   .form-to-send-msg input,
@@ -840,20 +601,8 @@
     font-size: 12px;
   }
 
-  .form-to-send-msg textarea {
-    height: 110px;
-  }
 
-  .send-msg a {
-    font-size: 13px;
-  }
-
-  .send-msg i {
-    font-size: 16px !important;
-  }
-
-  /* ---------- Footer ---------- */
-
+  /* Footer */
   .footer-section {
     padding-inline: 15px;
   }
@@ -864,39 +613,27 @@
 
   .footer-title {
     font-size: 18px;
-    margin-bottom: 18px;
   }
 
-  .footer-links li {
-    margin-bottom: 10px;
-  }
-
-  .footer-links a,
-  .footer-text {
+  .footer-text,
+  .footer-links a {
     font-size: 13px;
-  }
-
-  .social-icons {
-    gap: 15px;
-  }
-
-  .social-icons a {
-    font-size: 18px;
   }
 
   .bottom-links {
     flex-direction: column;
+    align-items: center;
     gap: 8px;
   }
 }
 
 
-/* =========================
-   Very Small Screens
-   Below 375px
-   ========================= */
 
-@media screen and (max-width: 374px) {
+/* ================================
+   VERY SMALL MOBILE
+================================ */
+
+@media (max-width: 374px) {
 
   .heading h1 {
     font-size: 25px;
@@ -919,30 +656,14 @@
   }
 
   .interactive {
-    font-size: 18px;
-  }
-
-  .game-card {
-    min-height: 190px;
-  }
-
-  .game-card h5 {
-    font-size: 11px;
+    font-size: 19px;
   }
 
   .carousel-item .inner .game {
     height: 180px;
   }
 
-  .location {
-    padding: 15px !important;
-  }
-
-  .caption-data .font-20 {
-    font-size: 13px;
-  }
-
-  .caption-data p {
-    font-size: 9px;
+  .game-card {
+    min-height: 190px;
   }
 }
