@@ -24,6 +24,12 @@ img {
   width: 100%;
   height: 100%;
 }
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 /* Some Used Variables */
 :root {
   --box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
@@ -217,6 +223,13 @@ form i:hover {
   overflow: hidden;
   background-color: #0b0e13;
 }
+.carousel,
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
 /* .carousal-item {
   width: 500px;
   height: 400px;
@@ -225,16 +238,15 @@ form i:hover {
   width: 100%;
 }
 .carousel-item .inner .game {
-  /* min-width: 400px;
-  height: 300px; */
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: 300px;
   margin-bottom: 10px;
   border-radius: 20px;
   overflow: hidden;
   border: 3px solid transparent;
   position: relative;
-  min-width: 0;
-  width: 100%;
-  height: 300px;
 }
 .carousel-item .inner .game img {
   height: 100%;
